@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+
+
+<header class="navbar">
+  <div class="navbar-left">
+    <img src="./assets/logo.png" alt="Logo" class="logo" />
+    <div class="site-name">
+    <span>Emergency</span>
+    <span>Service</span>
+  </div>
+  </div>
+
+  <div class="navbar-right">
+    <div class="icon-group">
+
+        <button class="button">
+      <div class="icon">
+        <span id="heart-count">1</span>
+        <img src="./assets/heart.png" alt="Heart" class="icon-img" />
+      </div>
+        </button>
+
+
+        <button class="button">
+      <div class="icon">
+        <span id="coin-count">100</span>
+        <img src="./assets/coin.png" alt="Coin" class="icon-img" />
+      </div>
+        </button>
+      
+      
+      <button class="copy-button" onclick="incrementCopyCount()">
+        <span id="copy-count">1</span>
+        <span id="copy-count">copy</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="banner">
+  <div class="banner-content">
+    <img src="./assets/logo.png" alt="logo" class="banner-logo">
+    <h1 class="banner-title">Emergency Service Directory</h1>
+    <p class="banner-subtitle">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+  </div>
+</section>
+
+
+<section class="card-section">
+  <div class="card-grid">
+    <div class="card featured">
+        <div class="history-header">
+        <p><i class="fa-regular fa-clock"></i> Call History</p>
+        <button class="copy-button" onclick="incrementCopyCount()">
+        <span id="copy-count">Clear</span>
+      </button>
+    </div>
+
+    <div>
+        <p>history example</p>
+    </div>
+
+    </div>
+    
+
+
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">National Emergency Number</h3>
+  <p class="card-description">National Emergency</p>
+  <p class="card-number">999</p>
+  <p class="card-category">All</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/police.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Police Helpline Number</h3>
+  <p class="card-description">Police</p>
+  <p class="card-number">999</p>
+  <p class="card-category">Police</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/fire-service.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Fire Service Number</h3>
+  <p class="card-description">Fire Service</p>
+  <p class="card-number">999</p>
+  <p class="card-category">Fire</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/ambulance.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Ambulance Service</h3>
+  <p class="card-description">Ambulance</p>
+  <p class="card-number">1994-999999</p>
+  <p class="card-category">Health</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Women & Child Helpline</h3>
+  <p class="card-description">Women & Child Helpline</p>
+  <p class="card-number">109</p>
+  <p class="card-category">Help</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Anti-Corruption Helpline</h3>
+  <p class="card-description">Anti-Corruption</p>
+  <p class="card-number">106</p>
+  <p class="card-category">Govt.</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Electricity Helpline</h3>
+  <p class="card-description">Electricity Outage</p>
+  <p class="card-number">16216</p>
+  <p class="card-category">Electricity</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Brac Helpline</h3>
+  <p class="card-description">Brac</p>
+  <p class="card-number">16445</p>
+  <p class="card-category">NGO</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+    <div class="card">
+  <div class="icon-container">
+  <img src="./assets/emergency.png" alt="Ambulance Icon" class="card-icon" />
+  <i class="fa-regular fa-heart"></i>
+  </div>
+  <h3 class="card-title">Bangladesh Railway Helpline</h3>
+  <p class="card-description">Bangladesh Railway</p>
+  <p class="card-number">163</p>
+  <p class="card-category">Travel</p>
+  <div class="card-button">
+  <button class="copy-card-button"><i class="fa-regular fa-copy"></i> Copy</button>
+  <button class="call-button"><i class="fa-solid fa-phone"></i>  Call</button>
+  </div>
+</div>
+  </div>
+</section>
+
+
+
+
+
+    
+</body>
+</html>

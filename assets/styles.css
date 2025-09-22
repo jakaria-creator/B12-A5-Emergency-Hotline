@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5fff6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.site-name {
+  height: 45px;
+  width: 136px;
+  display: inline-flex;
+  flex-direction: column;
+  color : #006747;
+  font-size: 1 rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navbar-right .icon-group {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+
+
+.icon, .button, .copy-button {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button, .copy-button {
+    background-color: rgba(65, 255, 107, 0.1);
+    padding: 12px 36px;
+    border-radius: 50px;
+    border: none ;
+    text-decoration: none;
+}
+
+
+
+.copy-button {
+  background-color: #00A63E;
+  color: white;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.copy-button:hover {
+  background-color: #00695c;
+}
+
+.button:hover {
+  background-color: rgba(65, 255, 107, 0.2);
+}
+
+
+/* Banner Section */
+.banner-content {
+  text-align: center;
+  gap: 11px;
+  padding: 60px 12px;
+  background: radial-gradient(circle, #006747 50%, #013223 100%);
+  color: #FFFFFF;
+}
+.banner-logo {
+  width: 92px;
+  height: 92px;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* card section */
+
+
+.card-section {
+  padding: 48px 58px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+}
+
+/* Shared card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.card.featured {
+  grid-column: 4;
+  grid-row: 1 / span 3;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 24px;
+}
+
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.card-title {
+  margin: 0px 0px 8px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.card-description {
+  font-size: 18px;
+  margin: 0px;
+  color: #5C5C5C;
+}
+
+
+.card-button {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.copy-card-button, .call-button {
+  background-color: #FFFFFF;
+  color: grey;
+  font-size: 16px;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  flex: 1;
+}
+
+.copy-card-button:hover {
+  background-color: gray;
+  color: #FFFFFF;
+}
+
+.call-button {
+  background-color: green;
+  color: white;
+}
+
+.call-button:hover {
+  background-color: #2bb673;
+}
+
+.card-category {
+  background-color: #D3D3D3 ;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  max-width: fit-content;
+}
+
+.card-number {
+   margin: 0px;
+   padding-top: 20px;
+   font-size: 32px;
+   font-weight: 700;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
