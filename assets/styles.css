@@ -245,3 +245,22 @@ body {
   width: 100%;
 }
 
+/* mobile responsive */
+@media (max-width: 768px) {
+
+ .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .card.featured {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
