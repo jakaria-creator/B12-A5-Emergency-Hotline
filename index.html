@@ -25,7 +25,7 @@
 
         <button class="button">
       <div class="icon">
-        <span id="heart-count">1</span>
+        <span id="heart-count"></span>
         <img src="./assets/heart.png" alt="Heart" class="icon-img" />
       </div>
         </button>
@@ -63,14 +63,14 @@
     <div class="card featured">
         <div class="history-header">
         <p><i class="fa-regular fa-clock"></i> Call History</p>
-        <button class="copy-button" onclick="incrementCopyCount()">
+        <button class="copy-button" id="clear-history">
         <span id="copy-count">Clear</span>
       </button>
     </div>
 
-    <div>
-        <p>history example</p>
-    </div>
+    <div id="call-history-list">
+      
+  </div>
 
     </div>
     
@@ -209,6 +209,6 @@
 
 
 
-    
+<script src="./js/index.js"></script>   
 </body>
 </html>

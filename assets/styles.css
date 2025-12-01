@@ -169,6 +169,17 @@ body {
   color: #5C5C5C;
 }
 
+.fa-heart {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-heart:active {
+  transform: scale(1.5);
+  color: red;
+}
+
+
 
 .card-button {
     display: flex;
